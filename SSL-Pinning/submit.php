@@ -10,6 +10,7 @@
         echo 'OK';
         unset($_SESSION['token']);
     } else {
+        http_response_code(400);
         die('Invalid Token.');
     }
 ?>
